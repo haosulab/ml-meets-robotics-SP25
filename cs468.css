@@ -131,41 +131,40 @@ a:hover {
 }
 
 .row {
-    width: 100%;
     display: flex;
-    padding: 10px 8px;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0;
+}
+
+.row > div {
+    padding: 8px;
+    line-height: 1.2;
+}
+
+.date {
+    width: 100px;
+    text-align: right;
+}
+
+.file {
+    width: 100px;
+    text-align: center;
+}
+
+.subject {
+    width: 250px;
+    text-align: center;
+    color: #0a0879;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.topic {
+    flex: 1;
+    text-align: left;
 }
 
 .row.odd {
     background: #e8edff;
-}
-
-.date {
-    text-align: right;
-    flex: 10%;
-    display: flex;
-    align-items: center;
-}
-
-.file {
-    text-align: center;
-    flex: 10%;
-    align-items: center;
-}
-
-.subject {
-    text-align: center;
-    flex: 20%;
-    /* font-weight: bold;*/
-    color: #0a0879;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    align-items: center;
-}
-
-.topic {
-    text-align: left;
-    flex: 50%;
-    display: flex;
-    align-items: center;
 }
